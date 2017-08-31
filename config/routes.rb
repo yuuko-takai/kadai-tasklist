@@ -1,3 +1,4 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  # index (タスク一覧）、show（詳細ページ）、new（作成ページ）、edit（編集ページ）
+  resources :tasks
 end
