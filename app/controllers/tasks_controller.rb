@@ -3,7 +3,7 @@ class TasksController < ApplicationController
   
   # index (タスク一覧）、show（詳細ページ）、new（作成ページ）、edit（編集ページ）
   def index
-    @tasks = Task.all
+    @tasks = Task.all.page(params[:page])
   end
 
   def show

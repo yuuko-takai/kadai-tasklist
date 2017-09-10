@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
   before_action :set_task, only: [:show, :edit, :update, :destroy]
   
   def index
-    @tasks = Message.all.page(params[:page]).per(20)
+    @tasks = Message.all.page(params[:page]).per(10)
   end
 
   def show
